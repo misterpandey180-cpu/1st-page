@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Project Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#0f2027;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:rgba(0,0,0,0.7);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+nav h1{
+    color:#00f2fe;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00f2fe;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    background:linear-gradient(to right,#141e30,#243b55);
+    padding-top:80px;
+}
+
+.hero h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:600px;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+/* Stylish Buttons */
+.btn{
+    padding:15px 35px;
+    margin:10px;
+    border:none;
+    border-radius:50px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.btn-primary{
+    background:linear-gradient(45deg,#00f2fe,#4facfe);
+    color:black;
+}
+
+.btn-primary:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00f2fe;
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid #00f2fe;
+    color:#00f2fe;
+}
+
+.btn-outline:hover{
+    background:#00f2fe;
+    color:black;
+    box-shadow:0 0 20px #00f2fe;
+}
+
+/* Section */
+section{
+    padding:100px 10%;
+color:teal
+}
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:35px;
+    color:white
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(0,242,254,0.4);
+}
+
+/* Gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery div{
+    height:200px;
+    background:linear-gradient(45deg,#00f2fe,#4facfe);
+    border-radius:20px;
+}
+
+/* Testimonials */
+.testimonial{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+}
+
+/* Contact */
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    max-width:600px;
+    margin:auto;
+}
+
+.contact input, .contact textarea{
+    padding:15px;
+    border-radius:10px;
+    border:none;
+    outline:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:black;
+    margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Cradle Life Science Pvt Ltd</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Welcome to Cradle Web</h2>
+    <p>Yeh ek stylish aur modern website project page hai jisme smooth animation aur beautiful buttons use kiye gaye hain.</p>
+    <div>
+        <button class="btn btn-primary" >Get Started</button>
+        <button class="btn btn-outline">Learn More</button>
+    </div>
+</section>
+
+<section id="features">
+    <h2 class="section-title">Our Features</h2>
+    <div class="cards">
+        <div class="card">Fast Performance</div>
+        <div class="card">Responsive Design</div>
+        <div class="card">Modern UI/UX</div>
+        <div class="card">Secure System</div>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="cards">
+        <div class="card">Web Development</div>
+        <div class="card">App Development</div>
+        <div class="card">Graphic Design</div>
+        <div class="card">SEO Optimization</div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2 class="section-title">Project Gallery</h2>
+    <div class="gallery">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button class="btn btn-primary"?family="placement.ranchicradle@gmail.com">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 MyProject | All Rights Reserved
+</footer>
+
+</body>
+</html>
